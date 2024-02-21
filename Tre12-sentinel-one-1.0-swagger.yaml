@@ -1,11 +1,3 @@
-basePath: /
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      in: header
-      name: Authorization
-      type: apiKey
-host: usea1-007.sentinelone.net
 openapi: 3.0.0
 paths:
   /web/api/v2.1/activities:
