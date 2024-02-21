@@ -28,3 +28,8 @@ components:
   schemas:
     getAgentResponse:
       type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: object
