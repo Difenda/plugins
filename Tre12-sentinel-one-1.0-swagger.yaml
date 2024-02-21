@@ -24,6 +24,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/getAgentResponse'
+
 components:
   schemas:
     getAgentResponse:
@@ -32,4 +33,49 @@ components:
         data:
           type: array
           items:
-            type: object
+            $ref: '#/components/schemas/agent'
+    agent:
+      type: object
+      properties:
+        accountName:
+          type: string
+          description: 'The Agent account name. Example: "MyAccount".'
+        agentVersion:
+          type: string
+          description: 'The Agent version. Example: '
+        computerName:
+          type: string
+          description: 'The Agent computer name. Example: "MyComputer".'
+        isActive:
+          type: boolean
+          description: 'The Agent is active. Example: "true".'
+        isDecommissioned:
+          type: boolean
+          description: 'The Agent is decommissioned. Example: "false".'
+        isUpToDate:
+          type: boolean
+          description: 'The Agent is up to date. Example: "true".'
+        lastLoggedInUserName:
+          type: string
+          description: 'The Agent last logged in user name. Example: "MyUser".'
+        locations:
+          type: array
+          description: 'The Agent locations. Example: "MyLocation'
+        osArch:
+          type: string
+          description: 'The Agent OS architecture. Example: "x64".'
+        osName:
+          type: string
+          description: 'The Agent OS name. Example: "Windows".'
+        osVersion:
+          type: string
+          description: 'The Agent OS version. Example: "10.0.19042".'
+        osType:
+          type: string
+          description: 'The Agent OS type. Example: "Windows".' 
+        osUsername:
+          type: string
+          description: 'The Agent OS username. Example: "MyUser".'
+        id:
+          type: string
+          description: 'The Agent ID. Example: "225494730938493804".'
