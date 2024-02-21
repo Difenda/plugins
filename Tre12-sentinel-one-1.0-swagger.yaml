@@ -12,7 +12,7 @@ paths:
       summary: Get Agent      
       parameters:
       - in: query
-        name: id
+        name: ids
         schema:
           type: string
         required: true
